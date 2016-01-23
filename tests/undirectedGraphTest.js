@@ -78,7 +78,6 @@ describe("paths",function(){
 		g.addEdge('A','B');
 		g.addEdge('B','C');
 		var path=g.pathBetween('A','C')
-
 		assert.deepEqual(['A','B','C'],path);
 	});
 
