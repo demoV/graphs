@@ -213,7 +213,7 @@ describe("multiple paths",function(){
 		g.addEdge('A','C');
 		g.addEdge('C','D');
 
-		var paths=g.allPaths('A','D');console.log(paths)
+		var paths=g.allPaths('A','D');
 		assert.equal(2,paths.length);
 		var pathContained=paths.every(function(path){
 			return ld.isEqual(path,['A','B','D']) || ld.isEqual(path,['A','C','D']);
